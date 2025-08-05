@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Top Matching Donors</h2>
+<ul class="list-group">
+    {% for donor in top_donors %}
+    <li class="list-group-item">
+        Donor {{ donor.id }} ({{ donor.blood_type }}) - Empathy Score: {{ donor.score }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
