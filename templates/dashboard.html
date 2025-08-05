@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>PatAi+ Dashboard</h2>
+<form method="POST" action="{{ url_for('main.match_patient') }}">
+    <div class="mb-3">
+        <label for="patient_id" class="form-label">Select Patient</label>
+        <select name="patient_id" class="form-select" required>
+            {% for patient in patients %}
+            <option value="{{ patient.id }}">{{ patient.id }} ({{ patient.blood_type }})</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Find Donors</button>
+</form>
+{% endblock %}
