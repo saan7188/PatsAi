@@ -1,0 +1,5 @@
+[
+    {"id": "D001", "blood_type": "A+", "last_donation": "2025-06-20", "frequency": 4, "response_time_hours": 2},
+    {"id": "D002", "blood_type": "A+", "last_donation": "2025-07-10", "frequency": 2, "response_time_hours": 5},
+    {"id": "D003", "blood_type": "O-", "last_donation": "2025-05-15", "frequency": 6, "response_time_hours": 1}
+]
