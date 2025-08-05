@@ -1,0 +1,4 @@
+[
+    {"id": "P001", "blood_type": "A+", "last_transfusion": "2025-07-15", "urgency": 0.9},
+    {"id": "P002", "blood_type": "O-", "last_transfusion": "2025-07-01", "urgency": 0.7}
+]
