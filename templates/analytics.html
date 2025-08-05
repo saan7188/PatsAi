@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Donor Analytics</h2>
+<div id="chart"></div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    var graph = {{ graph_json | safe }};
+    Plotly.newPlot('chart', graph.data, graph.layout);
+</script>
+{% endblock %}
